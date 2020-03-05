@@ -11,13 +11,13 @@ the test unit is triggered by directly running the corresponding file
 
 
 ## Matlab-working File List
-  ~~- [ ] CarexRouting.mat~~
+  - [ ] CarexRouting.mat
   - [x] DH.m
   - [x] Gt.m
   - [ ] JacobianCable.m
   - [ ] JacobianPoint.m
   - [x] MakeDHarray.m
-  ~~- [ ] matlab.mat~~
+  - [ ] matlab.mat
   - [ ] ReadCableXML.m
   - [ ] svd_illustrate.m
   - [ ] test_plot_intersection.m
