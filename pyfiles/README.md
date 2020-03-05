@@ -12,7 +12,7 @@ the test unit is triggered by directly running the corresponding file
 
 Matlab-working File List
   [] CarexRouting.mat
-  [x] DH.m
+  - [x] DH.m
   [] Gt.m
   [] JacobianCable.m
   [] JacobianPoint.m
