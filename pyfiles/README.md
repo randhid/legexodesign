@@ -7,4 +7,4 @@ Package for The converted files
   
 each file contains a test unit (The functions will receiving numpay array as inputs)
 
-the test unit is triggered by directly run the corresponding file
+the test unit is triggered by directly running the corresponding file
