@@ -23,6 +23,17 @@ def Gt(TransM0, BdWt, BdCoM4 ,gv):
 
     for i in range(nJ):
 
+        BdCoMLCS = ""   # TODO: the dimensions in MATLAB (4*i+1:4*i+4,:)
+
+        Fi = BdWt(i)*gv
+
+        for j in range(i):  # TODO: Understand this part
+
+            Oj = ""
+            zj = ""
+            Gij = ""
+
+            G[j] = ""
 
 
-    pass
+    return G
