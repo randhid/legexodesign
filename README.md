@@ -1,6 +1,6 @@
 # Python Branch
 
-old files still contained in the **matlab2convert**
+Old files still contained in the **matlab2convert**
 
 The converted files can be found in **pyfiles**
 
