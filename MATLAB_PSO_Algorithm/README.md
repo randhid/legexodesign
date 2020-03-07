@@ -42,6 +42,10 @@ An example of PSO.m can be found in **PSO_function_test.m**, the function plots 
   
   result.GlobalBest (the best particle after all the iteration)
   
+## **Analyze data**
+
+  the best parameter can be found in **result.GlobalBest.Position**
   
+  the best cost can be found in **result.GlobalBest.Cost**
   
   
