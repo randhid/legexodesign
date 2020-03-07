@@ -14,8 +14,8 @@ the test unit is triggered by directly running the corresponding file
   - [ ] CarexRouting.mat
   - [x] DH.m
   - [x] Gt.m
-  - [x] JacobianCable.m   **(In progress)
-  - [x] JacobianPoint.m   **(In progress)
+  - [x] JacobianCable.m   **(In progress)**
+  - [x] JacobianPoint.m   **(In progress)**
   - [x] MakeDHarray.m
   - [ ] matlab.mat
   - [ ] ReadCableXML.m
@@ -25,7 +25,7 @@ the test unit is triggered by directly running the corresponding file
   - [ ] test_whole_workspace.m
   - [x] TransMat.m
   - [ ] untitled.svg
-  - [x] wfw.m   **(In progress)
+  - [x] wfw.m   **(In progress)**
   - [ ] wfw_carex.mat
   - [ ] wfw_old.m
   - [ ] wfw_old2.m
