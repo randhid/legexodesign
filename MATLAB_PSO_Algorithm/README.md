@@ -6,7 +6,7 @@ An example of PSO.m can be found in **PSO_function_test.m**, the function plots 
 
 ## **Problem properties**
 
-  problem.CostFunction
+  problem.CostFunction (example: problem.CostFunction = @(x) function(x);)
   
   problem.nVar (number of changing variables)
   
