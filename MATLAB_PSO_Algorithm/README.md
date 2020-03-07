@@ -2,7 +2,7 @@
 
 The function **PSO.m** receives **Problems** and **parameters**
 
-An example of PSO.m can be found in **PSO_function_test.m**, the function plots the best cost along the iteration in both actual and semilogy scale
+An example of PSO.m can be found in **PSO_function_test.m**, the function plots the best cost along with the iterations in both actual and semilogy scale
 
 ## **Problem properties**
 
