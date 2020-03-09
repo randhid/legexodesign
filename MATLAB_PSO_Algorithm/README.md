@@ -1,10 +1,10 @@
 ## The MATLAB implementation of Particle Swarm Optimization
 
-The function **PSO.m** receives **Problems** and **parameters**
+The function **PSO.m** receives **problems** and **parameters**
 
 An example of PSO.m can be found in **PSO_function_test.m**, the function finds the best 5 variables that make the output of the **sphere.m** function smallest, and plots the best result along with the iterations in both actual and semilogy scale
 
-## **Problem properties**
+## **problem properties**
 
   problem.CostFunction (example: problem.CostFunction = @(x) function(x);)
   
