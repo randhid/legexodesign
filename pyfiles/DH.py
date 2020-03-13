@@ -39,4 +39,5 @@ if __name__ == "__main__":
 
     T = DH(dh)
 
-    print("The T for dh = {} is :\n{}".format(dh, T))
+    # print("The T for dh = {} is :\n{}".format(dh, T))
+    print(T)
