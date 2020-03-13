@@ -34,7 +34,7 @@ An example of GA.m can be found in **GeneticAlgorithm.m**, the function finds th
   params.ShowIterInfo (=true to show the iterations)
   
   
-## **Returns**
+## **returns**
 
   **result = GA(problem, params);**
   
@@ -46,7 +46,7 @@ An example of GA.m can be found in **GeneticAlgorithm.m**, the function finds th
   
   result.GlobalBest (the best particle after all the iteration)
   
-## **Analyze data**
+## **analyze data**
 
   the best parameters can be found in **result.GlobalBest.Position**
   
