@@ -2,7 +2,7 @@
 
 The function **GA.m** receives **problems** and **parameters**
 
-An example of GA.m can be found in **GeneticAlgorithm.m**, the function finds the best 6 variables that make the output of the **sphere.m** function minimum, and plots the best result along with the iterations.
+An example of GA.m can be found in **GeneticAlgorithm.m**, the function finds the best 6 variables that make the output of the **sphere.m** function minimum or maximum, and plots the best result along with the iterations.
 
 ## **problem properties**
 
