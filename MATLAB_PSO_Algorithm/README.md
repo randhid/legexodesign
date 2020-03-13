@@ -14,6 +14,8 @@ An example of PSO.m can be found in **ParticleSwarmOptimization.m**, the functio
   
   problem.VarMax (the upper boundary of the variables)
   
+  problem.FindMin (=true to solve for the minimum, Solve for the maximum or minimum)
+  
   
 ## **parameters properties**
 
@@ -34,11 +36,13 @@ An example of PSO.m can be found in **ParticleSwarmOptimization.m**, the functio
   
 ## **Returns**
 
-  result = PSO(problem, params);
+  **result = PSO(problem, params);**
   
-  result.last_it_pop (the particles within the last iteration)
+  result.last_iteration_pop (the particles within the last iteration)
   
-  result.BestCosts_list (the best global cost within each iterations)
+  result.BestCosts_List (the best global cost within each iterations)
+  
+  result.BestCandidate_List  (the best parameters through all the iterations)
   
   result.GlobalBest (the best particle after all the iteration)
   
