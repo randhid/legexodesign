@@ -34,7 +34,7 @@ An example of PSO.m can be found in **ParticleSwarmOptimization.m**, the functio
   params.ShowIterInfo (=true to show the iterations)
   
   
-## **Returns**
+## **returns**
 
   **result = PSO(problem, params);**
   
@@ -46,7 +46,7 @@ An example of PSO.m can be found in **ParticleSwarmOptimization.m**, the functio
   
   result.GlobalBest (the best particle after all the iteration)
   
-## **Analyze data**
+## **analyze data**
 
   the best parameters can be found in **result.GlobalBest.Position**
   
