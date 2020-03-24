@@ -9,7 +9,7 @@ The MATLAB Particle Swarm Optimization inplementation can be found in **MATLAB_P
 
 The MATLAB Genetic Algorithm inplementation can be found in **MATLAB_GA_Algorithm**
 
-The Python Genetic Algorithm inplementation can be found in **PYTHON_GA_Algorithm**
+The Python Genetic Algorithm inplementation can be found in **Python_GA_Algorithm**
 
 It's Possible to call MATLAB function directly from python, more info can be found in **Python_MATLAB_Engine**
 
