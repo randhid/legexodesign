@@ -1,7 +1,7 @@
 # TODO: Understand the concept
 
 
-#JC Summary of this function goes here
+# NOTE: this file calcuate the cable jacobians 
 #   nBody denotes the number of bodies.
 #   TransM is 4n by 4 matrix of transformation
 #   CableSeg denote each segment of cable, in the format of:

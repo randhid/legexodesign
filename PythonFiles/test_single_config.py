@@ -4,6 +4,7 @@ from math import *
 from MakeDHarray import *
 from TransMat import *
 from Gt import *
+from JacobianCable import *
 
 # NOTE: This file is the single configuration test
 
@@ -37,7 +38,7 @@ BdCoM4 = np.array([[0, 0, 0, 1],
                     [-0.185, 0, 0, 1]])
 
 
-# REF: kinetic functions ############################
+# NOTE: kinetic functions ############################ 
 
 # make DH arrays based on the measured data
 DHa = MakeDHarray( q , uArm, lArm)
@@ -51,11 +52,14 @@ TransM0 = TransMat( nJoint, DHa )
 G = Gt(TransM0,BdWt,BdCoM4,Gv)
 # print('G: ', G)
 
+# calculate the cable jacobian
+Jc = JacobianCable(nJoint, nCable, TransM0, CableSeg, CbRtPtCrd, CbRtPtBdId )
 
-# TODO: finish the workflow
+
+# TODO: finish the workflow (testing area) 
 # print('##########################################')
 
-# REVIEW: Parameters
+# REVIEW: review the parameters by hand 
 # print(TransM0)
 # print(BdWt)
 # print(BdCoM4)
