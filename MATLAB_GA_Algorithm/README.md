@@ -1,8 +1,8 @@
-## The MATLAB implementation of Particle Swarm Optimization
+## The MATLAB implementation of Genetic Algorithm
 
-The function **PSO.m** receives **problems** and **parameters**
+The function **GA.m** receives **problems** and **parameters**
 
-An example of PSO.m can be found in **ParticleSwarmOptimization.m**, the function finds the best 6 variables that make the output of the **sphere.m** function minimum or maximum, and plots the best result along with the iterations.
+An example of GA.m can be found in **GeneticAlgorithm.m**, the function finds the best 6 variables that make the output of the **sphere.m** function minimum or maximum, and plots the best result along with the iterations.
 
 ## **problem properties**
 
@@ -21,24 +21,24 @@ An example of PSO.m can be found in **ParticleSwarmOptimization.m**, the functio
 
   params.MaxIt (Maximum Number of Iterations)
   
-  params.nPop (Population Size (Swarm Size))
+  params.nPop (Population Size (parent population size))
   
-  params.w  (Inertia Coefficient)
+  params.beta  (Parent score coefficient (<0 for find the minimum, >0 for find the maximum))
   
-  params.wdamp (Damping Ratio of Inertia Coefficient)
+  params.c_percentage (Percentage of offspring compare to Population size)
   
-  params.c1 (Personal Acceleration Coefficient)
+  params.mutation_rate (Mutation rate of GA)
   
-  params.c2 (Social Acceleration Coefficient)
+  params.sigma (standard deviation of the gaussian noise in the mutation)
   
   params.ShowIterInfo (=true to show the iterations)
   
   
 ## **returns**
 
-  **result = PSO(problem, params);**
+  **result = GA(problem, params);**
   
-  result.last_iteration_pop (the particles within the last iteration)
+  result.last_iteration_pop (the parameters within the last iteration)
   
   result.BestCosts_List (the best global cost within each iterations)
   
