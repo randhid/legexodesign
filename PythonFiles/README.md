@@ -11,7 +11,7 @@ the test unit is triggered by directly running the corresponding file
 
 
 ## Matlab-working File List
-  - [ ] CarexRouting.mat
+  - [x] CarexRouting.mat
   - [x] DH.m
   - [x] Gt.m
   - [x] JacobianCable.m   **(In progress)**
@@ -21,7 +21,7 @@ the test unit is triggered by directly running the corresponding file
   - [ ] ReadCableXML.m
   - [ ] svd_illustrate.m
   - [ ] test_plot_intersection.m
-  - [ ] test_single_config.m
+  - [x] test_single_config.m
   - [ ] test_whole_workspace.m
   - [x] TransMat.m
   - [ ] untitled.svg
