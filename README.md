@@ -11,6 +11,8 @@ The MATLAB Genetic Algorithm inplementation can be found in **MATLAB_GA_Algorith
 
 The Python Genetic Algorithm inplementation can be found in **PYTHON_GA_Algorithm**
 
+It's Possible to call MATLAB function directly from python, more info can be found in **Python_MATLAB_Engine**
+
 **Example Plot from GA and PSO**
 
 ![image](https://user-images.githubusercontent.com/55459522/76656359-cde97780-6545-11ea-8a1e-c3a8384b952f.png)
