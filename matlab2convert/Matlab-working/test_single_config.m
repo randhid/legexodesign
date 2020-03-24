@@ -22,7 +22,10 @@ BdCoM4=[     0,     0,   0,   1;
 
 %%
 DHa=MakeDHarray( q , uArm, lArm);
+
 TransM0  = TransMat( nJoint, DHa );
+
+return
 G=Gt(TransM0,BdWt,BdCoM4,Gv);
 Jc = JacobianCable(nJoint, nCable, TransM0, CableSeg, CbRtPtCrd, CbRtPtBdId );
 [Je, Eff0] = JacobianPoint(TransM0,  EffPt4, EffPtId);

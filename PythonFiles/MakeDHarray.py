@@ -1,8 +1,8 @@
-#MAKEDHARRAY Summary of this function goes here
+# NOTE: this file generate the DH array 
 #   DHpara=[a   d   alpha   theta]
 
 from math import *
-import numpy
+import numpy as np
 
 def MakeDHarray(q , uArm, lArm):
 
@@ -13,7 +13,7 @@ def MakeDHarray(q , uArm, lArm):
     DHpara2 = [    0,-uArm,  pi/2, q[2]+pi/2]
     DHpara3 = [ lArm,    0,     0, q[3]-pi/2]
 
-    DHpara = numpy.array((DHpara0, DHpara1, DHpara2, DHpara3))
+    DHpara = np.array((DHpara0, DHpara1, DHpara2, DHpara3))
 
     return DHpara
 

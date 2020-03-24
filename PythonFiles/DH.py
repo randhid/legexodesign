@@ -1,5 +1,5 @@
 from math import *
-import numpy
+import numpy as np
 
 # NOTE: This file generates the transform matrix of each individual link based on the DH notation
 # DH function receives a list of DH notation
@@ -9,7 +9,7 @@ import numpy
 def DH(dh):
 
     # Identity Matrix
-    T = numpy.eye(4, 4)
+    T = np.eye(4, 4)
 
     # first row
     T[0][0] = cos(dh[3])
