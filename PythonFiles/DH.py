@@ -1,7 +1,8 @@
 from math import *
 import numpy
 
-# DH summary
+# NOTE: This file generates the transform matrix of each individual link based on the DH notation
+# DH function receives a list of DH notation
 # dh = [a, d, alpha, theta]
 
 

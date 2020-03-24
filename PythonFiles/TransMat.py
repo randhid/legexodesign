@@ -2,7 +2,7 @@ from math import *
 from DH import *
 import numpy
 
-#TRANSMAT Summary
+# NOTE: this file calcuate the transform matrix from base frame to the end effector frame
 # transformation matrix
 
 # Output a (nJoint+1, 4) size matrix
