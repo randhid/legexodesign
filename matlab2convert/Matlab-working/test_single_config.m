@@ -26,6 +26,9 @@ DHa=MakeDHarray( q , uArm, lArm);
 TransM0  = TransMat( nJoint, DHa );
 G=Gt(TransM0,BdWt,BdCoM4,Gv);
 Jc = JacobianCable(nJoint, nCable, TransM0, CableSeg, CbRtPtCrd, CbRtPtBdId );
+
+return 
+
 [Je, Eff0] = JacobianPoint(TransM0,  EffPt4, EffPtId);
 
 [ effmax, effvert, sws] = wfw( Tmax, Jc', Je' ,G);

@@ -54,10 +54,13 @@ G = Gt(TransM0,BdWt,BdCoM4,Gv)
 
 # calculate the cable jacobian
 Jc = JacobianCable(nJoint, nCable, TransM0, CableSeg, CbRtPtCrd, CbRtPtBdId )
+print('Jc: ', Jc)
 
 
 # TODO: finish the workflow (testing area) 
 # print('##########################################')
+
+
 
 # REVIEW: review the parameters by hand 
 # print(TransM0)
