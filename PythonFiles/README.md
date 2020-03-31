@@ -14,7 +14,7 @@ the test unit is triggered by directly running the corresponding file
   - [x] CarexRouting.mat
   - [x] DH.m
   - [x] Gt.m
-  - [x] JacobianCable.m   **(In progress)**
+  - [x] JacobianCable.m  
   - [x] JacobianPoint.m   **(In progress)**
   - [x] MakeDHarray.m
   - [ ] matlab.mat
