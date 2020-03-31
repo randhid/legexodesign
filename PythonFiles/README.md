@@ -15,7 +15,7 @@ the test unit is triggered by directly running the corresponding file
   - [x] DH.m
   - [x] Gt.m
   - [x] JacobianCable.m  
-  - [x] JacobianPoint.m   **(In progress)**
+  - [x] JacobianPoint.m 
   - [x] MakeDHarray.m
   - [ ] matlab.mat
   - [ ] ReadCableXML.m
