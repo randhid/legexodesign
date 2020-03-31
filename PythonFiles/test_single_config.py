@@ -6,6 +6,7 @@ from MakeDHarray import *       # transfered MATLAB functions
 from TransMat import *
 from Gt import *
 from JacobianCable import *
+from JacobianPoint import *
 
 # NOTE: This file is the single configuration test
 
@@ -55,7 +56,13 @@ G = Gt(TransM0,BdWt,BdCoM4,Gv)
 
 # calculate the cable jacobian
 Jc = JacobianCable(nJoint, nCable, TransM0, CableSeg, CbRtPtCrd, CbRtPtBdId )
-print('Jc: ', Jc)
+# print('Jc: ', Jc)
+
+# calculate the end effector jacobian
+[Je, Eff0] = JacobianPoint(TransM0,  EffPt4, EffPtId)
+# print('Je: ', Je)
+# print('Eff0: ', Eff0)
+
 
 
 # TODO: finish the workflow (testing area) 

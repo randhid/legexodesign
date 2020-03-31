@@ -47,7 +47,6 @@ def JacobianCable(nJoint, nCable, TransM0, CableSeg, CbRtPtCrd4, CbRtPtBdId ):
 
         # Jc(CableID, j)=(rj x F) . zj AND ri = Pt - Oj
         # Note that Joint j is on Body j-1, which means O(j)=TransM0(j-1)
-        # TODO: finish this part 
         for j in range(Pt2BdId - Pt1BdId):
 
             JtId = Pt2BdId - j                  # tension jacobian ID
@@ -57,6 +56,6 @@ def JacobianCable(nJoint, nCable, TransM0, CableSeg, CbRtPtCrd4, CbRtPtBdId ):
 
             Jc[CableID-1, JtId-1] = Jc[CableID-1, JtId-1] + Jj
 
-            print(Jc)
+            # print(Jc)
 
     return Jc

@@ -29,9 +29,10 @@ G=Gt(TransM0,BdWt,BdCoM4,Gv);
 
 
 Jc = JacobianCable(nJoint, nCable, TransM0, CableSeg, CbRtPtCrd, CbRtPtBdId );
-
-return 
+ 
 [Je, Eff0] = JacobianPoint(TransM0,  EffPt4, EffPtId);
+
+return
 
 [ effmax, effvert, sws] = wfw( Tmax, Jc', Je' ,G);
 %[ effmax2, effvert2, sws2] = wfw_old( Tmax, Jc', Je' , G);
