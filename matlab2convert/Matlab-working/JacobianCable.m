@@ -19,13 +19,13 @@ for i=1:nCableSeg
     
     % Find Pt1 Coordinate in Global
     Pt1Crd4=CbRtPtCrd4(CableSegCurrent(2),:);
-    Pt1BdId=CbRtPtBdId(CableSegCurrent(2),2);
+    Pt1BdId=CbRtPtBdId(CableSegCurrent(2),2)
     TransM01=TransM0(Pt1BdId*4+1:Pt1BdId*4+4,:);
     Pt1CrdG4=TransM01*Pt1Crd4';
     
     % Find Pt2 Coordinate in Global
     Pt2Crd4=CbRtPtCrd4(CableSegCurrent(3),:);
-    Pt2BdId=CbRtPtBdId(CableSegCurrent(3),2);
+    Pt2BdId=CbRtPtBdId(CableSegCurrent(3),2)
     TransM02=TransM0(Pt2BdId*4+1:Pt2BdId*4+4,:);
     Pt2CrdG4=TransM02*Pt2Crd4';  
     

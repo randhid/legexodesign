@@ -1,7 +1,8 @@
-import scipy.io
+import scipy.io             # read the matlab file
 import numpy as np
 from math import *
-from MakeDHarray import *
+
+from MakeDHarray import *       # transfered MATLAB functions
 from TransMat import *
 from Gt import *
 from JacobianCable import *

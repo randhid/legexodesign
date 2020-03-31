@@ -1,4 +1,4 @@
-# TODO: Understand the concept
+# REVIEW: Understand the concept
 
 import numpy as np
 
@@ -19,35 +19,44 @@ def JacobianCable(nJoint, nCable, TransM0, CableSeg, CbRtPtCrd4, CbRtPtBdId ):
     Jc = np.zeros((nCable, nJoint))
 
     # REVIEW 
-    i = 0
+    for i in range(nCableSeg):
 
-    # get the current segment
-    CableSegCurrent = CableSeg[i, ...]
-    CableID = CableSegCurrent[0]
+        # get the current segment
+        CableSegCurrent = CableSeg[i, ...]      # get the first row in cable seg series as the current segment
+        CableID = CableSegCurrent[0]            # the first element in the current segment is the ID
 
-    # Find Pt1 Coordinate in Global
-    Pt1Crd4 = CbRtPtCrd4[CableSegCurrent[1] - 1, ...]
-    Pt1BdId = CbRtPtBdId[CableSegCurrent[1] - 1, 1]
+        # Find Pt1 Coordinate in Global
+        Pt1Crd4 = CbRtPtCrd4[CableSegCurrent[1] - 1, ...]       # the second element in the current segment is the coordinate of the first part
+        Pt1BdId = CbRtPtBdId[CableSegCurrent[1] - 1, 1]         # find the body id based on the second element in the current segment 
 
-    TransM01 = TransM0[Pt1BdId*4: Pt1BdId*4+4, ...]
-    Pt1CrdG4 = np.dot(TransM01, Pt1Crd4.T)
+        TransM01 = TransM0[Pt1BdId*4: Pt1BdId*4+4, ...]         # get the corresponding transformation matrix
+        Pt1CrdG4 = np.dot(TransM01, Pt1Crd4.T)                  # find the coordinate in the global 
 
-    # Find Pt2 Coordinate in Global
-    Pt2Crd4 = CbRtPtCrd4[CableSegCurrent[2] - 1, ...]
-    Pt2BdId = CbRtPtBdId[CableSegCurrent[2] - 1, 1]
+        # Find Pt2 Coordinate in Global
+        Pt2Crd4 = CbRtPtCrd4[CableSegCurrent[2] - 1, ...]       # the third element in the current segment is the coordinate of the second part
+        Pt2BdId = CbRtPtBdId[CableSegCurrent[2] - 1, 1]         # find the body id based on the thrid element in the current segment
 
-    TransM02  =TransM0[Pt2BdId*4: Pt2BdId*4+4, ...]
-    Pt2CrdG4 = np.dot(TransM02, Pt2Crd4.T)
+        TransM02  =TransM0[Pt2BdId*4: Pt2BdId*4+4, ...]         # get the corresponding transformation matrix
+        Pt2CrdG4 = np.dot(TransM02, Pt2Crd4.T)                  # find the coordinate in the global 
 
-    # Find unit cable force
-    f = Pt1CrdG4[0:3] - Pt2CrdG4[0:3]
-    f = f/np.linalg.norm(f)
+        # Find unit cable force
+        f = Pt1CrdG4[0:3] - Pt2CrdG4[0:3]                       # get the difference between coordinate of part 1 and part 2
+        f = f/np.linalg.norm(f)                                 # normalize the difference
 
-    # Jc(CableID, j)=(rj x F) . zj AND ri = Pt - Oj
-    # Note that Joint j is on Body j-1, which means O(j)=TransM0(j-1)
-    # TODO: finish this part 
-    for j in range(Pt2BdId - Pt1BdId):
+        # return f
 
-        JtId = Pt2BdId-j
+        # Jc(CableID, j)=(rj x F) . zj AND ri = Pt - Oj
+        # Note that Joint j is on Body j-1, which means O(j)=TransM0(j-1)
+        # TODO: finish this part 
+        for j in range(Pt2BdId - Pt1BdId):
 
-    return f
+            JtId = Pt2BdId - j                  # tension jacobian ID
+            Oj = TransM0[JtId*4-4:JtId*4-1, 3]     # corresponding transform matrix
+            zj = TransM0[JtId*4-4:JtId*4-1, 2]     # corresponding transform matrix
+            Jj = np.dot(np.cross(Pt2CrdG4[0:3]-Oj, f), zj)
+
+            Jc[CableID-1, JtId-1] = Jc[CableID-1, JtId-1] + Jj
+
+            print(Jc)
+
+    return Jc

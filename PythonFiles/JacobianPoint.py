@@ -1,4 +1,5 @@
-# TODO: Understand the concept
+# REVIEW: Understand the concept
+# TODO
 
 
 #Jp gives the Jacobian Matrix of any point on body.

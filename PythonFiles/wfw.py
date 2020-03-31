@@ -1,4 +1,4 @@
-# TODO: Understand the concept
+# TODO 
 
 
 # NOTE: wfw find the wrench feasible workspace of the cable system at a give configuration.
