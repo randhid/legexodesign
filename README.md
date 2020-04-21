@@ -1,3 +1,3 @@
-## PSO and GA testing branch
+## Original Branch
 
-this branch is for testing Genetic Algorithm (GA) and Particle Swarm Optimization (PSO) for finding the optimized structure of C-ALEX in python environment
+original branch with all the MATLAB files
